@@ -1,27 +1,18 @@
-import './App.css';
+import React from 'react';
+import SimpleScheduler from './components/SimpleScheduler';
+import { Card } from './components/ui/card';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+    <div className="min-h-screen bg-gray-50 py-8">
+      <div className="max-w-6xl mx-auto px-4">
+        <h1 className="text-3xl font-bold text-gray-900 mb-8">
+          Chad Manning Music Scheduling
+        </h1>
+        <Card className="bg-white rounded-lg shadow p-6">
+          <SimpleScheduler />
+        </Card>
+      </div>
     </div>
   );
 }
